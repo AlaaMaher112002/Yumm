@@ -1,0 +1,266 @@
+#header{
+    background-color: black;
+    height: 100vh;
+
+}
+.color-box{
+    position: fixed;
+    height: 100vh;
+    left: -221px;
+    display: flex;
+    z-index: 999999;
+    
+}
+
+
+.social-icon{
+    position: absolute;
+    bottom: 40;
+}
+.color-options{
+    width: 220px;
+    background-color:black;
+    
+}
+.color-options li{
+padding-top: 30px;
+width: 100px;
+
+}
+.color-options li a{
+    text-decoration: none;
+    padding-top: 5px;
+    color: #f9f6f6;
+}
+.color-box i{
+    padding: 10px;
+   
+}
+.moveingDown{
+    transform: translateY(400px);
+    opacity: 0;
+    transition: all .5s;
+}
+.moveingUp{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 3s;
+}
+.details{
+    height: 100vh;
+    width: 65px;
+    background-color:#Fff;
+    text-align: center;
+    position: relative;
+    
+}
+
+.img{
+    width: 40px !important;
+}
+.icon{
+  position: absolute;
+  bottom: 25px;
+
+}
+.social-icon{
+    color: gray;
+}
+.social-icon i{
+    color: rgb(44, 43, 43);
+}
+body{
+
+    background-color: black;
+}
+
+.social-icon p{
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+#resipesdata{
+    padding-left: 50px;
+}
+
+.color-options.list-group{
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.moveingDown{
+    transform: translateY(250px);
+    opacity: 0;
+    transition: all .5s;
+}
+.moveingUp{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 3s;
+}
+
+
+.respiceImg{
+    width: 220;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.respiceImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px  ;
+    
+}
+
+
+.pic-layer{
+    transition: all 1s;
+   background-size: 100%;
+   position: absolute;
+   top: 100%;
+  
+   width: 100%;
+   height: 100%;
+   
+}
+.pic-layer h3{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-top: 40%;
+    color: black;
+    font-size: 22px;
+}
+.respiceImg:hover .pic-layer{
+   top: 0px;
+   background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+
+#main input{
+    background-color: transparent !important;
+    border: 0 !important;
+    border-bottom: 2px solid gray !important;
+    border-radius: 0px;
+    color: #f9f6f6;
+}
+#main input::placeholder{
+    text-align: center;
+}
+
+#contact{
+    position: relative;
+   
+}
+#contact input{
+    width: 45%;
+    height: 40px;
+    background-color:black ;
+    margin: auto;
+    margin-top: 10px;
+    border: 0px;
+    color: #Fff;
+    border-bottom: 2px solid rgb(189, 185, 185);
+}
+#nameAlert{
+    width: 45%;
+    height: 40px;
+    background-color:rgb(180, 156, 156) ;
+}
+
+
+
+#contact input::placeholder{
+    text-align: center;
+    color: rgb(207, 203, 203);
+    padding-bottom: 7px;;
+}
+
+#contact input::content{
+    color: #Fff;
+}
+
+
+
+#contact button{
+    width: 90px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 5;
+    left: 47%;
+    border:2px solid rgb(151, 34, 34);
+   margin-top: 10px;
+   color:rgb(151, 34, 34) ;
+}
+body{
+    background-color: black;
+}
+
+#loading{
+    position: fixed;
+    inset: 0;
+    background-color:black;
+    z-index: 99999999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#Categorydata h4{
+padding: 3px;
+font-weight: bold;
+padding-top: 15px;
+}
+
+#Categorydata p{
+    padding: 2px;
+    font-size: 20px;
+    }
+
+
+.Areabg{
+    background-color: rgb(7, 7, 7);
+    color: #Fff;
+    padding:10px 15px ;
+}
+
+.Areabg i{
+    color: rgb(109, 33, 33);
+    font-size: 45px;
+    padding: 10px 15px;
+}
+
+.bowel{
+    background-color: rgb(7, 7, 7);
+    color: #Fff;
+    padding:10px 15px ;  
+}
+.bowel i{
+    color: #6E9E3A;
+    font-size: 45px;
+    padding: 10px 15px;  
+}
+
+#fix-p{
+    height: 79px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.bowel p{
+font-size: 15px;
+padding-top: 7px;
+}
+
+
+#pCatogry{
+    height: 85px;
+    background-color: transparent;
+    overflow: hidden;
+}

@@ -1,0 +1,189 @@
+<html>
+
+<head>
+    <title>Meals</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <div id="header" class="px-5">
+
+        <div class="color-box">
+            <div class="color-options px-3 ">
+
+                <ul class="list-unstyled list-group">
+                    <li><a href="#main" id="linkSearch">Search</a></li>
+                    <li><a href="#catogry" id="linkcatogry">Categories</a></li>
+                    <li><a href="#area" id="arealink">Area</a></li>
+                    <li><a href="#ingridents" id="ingreidentslink">Ingredients</a></li>
+                    <li><a href="#contact" id="contactlink">Contact Us</a></li>
+                </ul>
+
+                <div class="social-icon pe-5 ">
+                    <i class="fa-brands fa-facebook-f "></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe   fa-1x"></i>
+                    <p class="pe-3">Copyright Â© 2019 All Rights Reserved.</p>
+
+
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="logo w-100">
+                    <img src="img/yummy-photo.jpg" alt="" class="img w-100 pt-4 ">
+                </div>
+                <div class="icons ">
+                    <div class="bar text-center">
+                        <i
+                            class=" fa-solid fa-bars w-100 fa-2x position-absolute top-50 start-50 translate-middle ps-2"></i>
+                    </div>
+                    <div class="icon ">
+                        <i class="fa-solid fa-globe w-100  fa-1x"></i>
+                        <i class="fa-solid fa-share-nodes w-100  fa-1x"></i>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container pt-5 px-5" id="main">
+            <div class="row gy-4 ">
+                <div class=" w-50">
+                    <input type="text" id="nameInput" class="form-control w-75 m-auto" placeholder="Search by Name">
+                </div>
+                <div class=" w-50">
+                    <input type="text" id="firstInput" class="form-control w-75 m-auto"
+                        placeholder="Search by First letter">
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container py-3 px-5">
+            <div class="row gy-4 py-5" id="resipesdata">
+            </div>
+        </div>
+
+
+
+        <div class="container py-3 px-5 text-center" id="contact">
+            <h2 class="text-white pt-5">Contact Us . . .</h2>
+            <div class="row g-4 py-5">
+
+                    <input type="text" id="name" required placeholder="Enter Your Name">
+                    <!-- <div id="nameAlert" class="alert alert-danger p-2 my-2 d-none">Name should be /^[A-z a-z \s 0-9]$/</div> -->
+                    <input type="text" id="email" required placeholder="Enter Your Email">
+                    <!-- <div id="nameAlert" class="alert alert-danger p-2 my-2 d-none">Email should be /^[a-z A-Z 0-9]{3-17} @[a-z]{3-9}\.[a-z]{3}$/</div> -->
+                    <input type="number" id="phone" required placeholder="Enter Your Phone">
+                    <!-- <div id="nameAlert" class="alert alert-danger p-2 my-2 d-none">Phone number should be /^(010|011|012|015|040)[0-9]{8}$/</div> -->
+                    <input type="number" id="age" required placeholder="Enter Your Age">
+                    <!-- <div id="nameAlert" class="alert alert-danger p-2 my-2 d-none">Age should be /^[0-9]$/</div> -->
+                    <input type="password" id="password" required placeholder="Enter Your Passward">
+                    <!-- <div id="nameAlert" class="alert alert-danger p-2 my-2 d-none">Passward should be /^[A-z a-z \s 0-9]$/</div> -->
+                    <input type="password" id="Repassward" required placeholder="Enter Your RePassward">
+                    <!-- <div id="nameAlert" class="alert alert-danger p-2 my-2 d-none">Repassward should be same Passward </div> -->
+
+
+
+
+
+                    <button class="btn float-end button mt-5 m-auto" onclick="clearForm()" id="addBtn" disabled>Submit</button>
+                    
+            </div>
+            
+        </div>
+
+
+        <div id="loading">
+            <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+          </div>
+
+
+
+        <div class="container py-3 px-5" id="catogry">
+            <div class="row gy-4 py-5 text-center" id="Categorydata">
+            </div>
+        </div>
+
+
+
+
+        <div class="container py-3 px-5" id="area">
+            <div class="row gy-4 py-5 text-center" id="areadata">
+            </div>
+        </div>
+
+
+
+
+        <div class="container py-3 px-5" id="ingridents">
+            <div class="row gy-4 py-5 text-center" id="ingridentsdata">
+            </div>
+        </div>
+
+
+
+        <div class="container py-3 px-5" id="Instructions">
+            <div class="row gy-4 py-5 text-center" id="Instructionsdata">
+
+
+
+                <div class="modal fade  text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 " id="exampleModalLabel">Instractions</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="RecipeInfo">
+              
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
